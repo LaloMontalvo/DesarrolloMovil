@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="secondary">
+      <ion-buttons slot="start">
+        <ion-back-button default-href="/inicio"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>Toasts</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Toasts</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Inline Toast</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-button id="open-toast" expand="block">Open</ion-button>
+    <p id="message">Este ejemplo de toast utiliza disparadores para abrir automáticamente un toast cuando se hace clic en el botón.</p>
+    <ion-toast trigger="open-toast" message="Este toast desaparecerá después de 5 segundos" [duration]="5000"></ion-toast>
+    <br>
+    <ion-header id="header">
+      <ion-toolbar>
+        <ion-title>Header</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    
+    <ion-content class="ion-padding">
+      <ion-button id="headerAnchor">Anclar al Encabezado</ion-button>
+      <ion-button id="footerAnchor">Anclar al Pie de página</ion-button>
+    
+      <ion-toast
+        trigger="headerAnchor"
+        position="top"
+        positionAnchor="header"
+        message="¡Hola Mundo!"
+        duration="2000"
+      ></ion-toast>
+      <ion-toast
+        trigger="footerAnchor"
+        position="bottom"
+        positionAnchor="footer"
+        message="¡Hola Mundo!"
+        duration="2000"
+      ></ion-toast>
+    </ion-content>
+    
+    <ion-footer id="footer">
+      <ion-toolbar>
+        <ion-title>Footer</ion-title>
+      </ion-toolbar>
+    </ion-footer>
+  </ion-content>
+  <ion-button id="open-toast">Abrir Toast</ion-button>
+  <ion-toast trigger="open-toast" message="¡Hola Mundo!" [duration]="3000" icon="globe"></ion-toast>
+</ion-content>

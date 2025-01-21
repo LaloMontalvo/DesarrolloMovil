@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+      <ion-buttons slot="secondary">
+        <ion-buttons slot="start">
+          <ion-back-button default-href="/inicio"></ion-back-button>
+        </ion-buttons>
+      </ion-buttons>
+      <ion-title>Searchbar</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Barra de busqueda</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<br>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Searchbar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-searchbar></ion-searchbar>
+<ion-searchbar placeholder="Custom Placeholder"></ion-searchbar>
+<ion-searchbar disabled="true" placeholder="Disabled"></ion-searchbar>
+<ion-searchbar value="Value"></ion-searchbar>
+<ion-searchbar animated="true" placeholder="Animated"></ion-searchbar>
+<br>
+<br>
+<ion-searchbar placeholder="Default"></ion-searchbar>
+<ion-searchbar color="primary" placeholder="Primary"></ion-searchbar>
+<ion-searchbar color="secondary" placeholder="Secondary"></ion-searchbar>
+<ion-searchbar color="tertiary" placeholder="Tertiary"></ion-searchbar>
+<ion-searchbar color="success" placeholder="Success"></ion-searchbar>
+<ion-searchbar color="warning" placeholder="Warning"></ion-searchbar>
+<ion-searchbar color="danger" placeholder="Danger"></ion-searchbar>
+<ion-searchbar color="light" placeholder="Light"></ion-searchbar>
+<ion-searchbar color="medium" placeholder="Medium"></ion-searchbar>
+<ion-searchbar color="dark" placeholder="Dark"></ion-searchbar>
+</ion-content>
